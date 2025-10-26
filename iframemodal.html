@@ -62,7 +62,7 @@
   document.head.appendChild(style);
 
   $('body').append(`
-    <button id="openIframeBtn">Open Site</button>
+    <button id="openIframeBtn">hello</button>
     <div id="iframeModal">
       <div id="iframeContainer">
         <button id="closeIframeBtn">&times;</button>
@@ -71,7 +71,6 @@
     </div>
   `);
 
-  // Add functionality
   $('#openIframeBtn').on('click', function () {
     const iframe = $('#lazyIframe');
     if (!iframe.attr('src')) iframe.attr('src', iframe.data('src'));
@@ -86,3 +85,4 @@
     }
   });
 })();
+
